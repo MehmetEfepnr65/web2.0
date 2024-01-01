@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota</title>
+    <link rel="stylesheet" href="TAraba.css">
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+<body>
+    <section class="header" id="header">
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="#">TOYATA<span>.</span></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="aktif">arabalar<span>.</span></a></li>
+                <li><a href="TArabaTARİH.html">tarih</a></li>
+                <li><a href="TArabaTEKNOLOJİ.html">teknoloji</a></li>
+                <li><a href="TArabaÜRETİM.html">üretim</a></li>
+                <li><a href="TArabaYORUMLAR.html">yorumlar</a></li>
+            </ul>
+        </div>
+        <div class="sosyal-medya">
+            <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="row">
+            <div class="left-sec">
+                <div class="content">
+                    <h2><span>Toyota</span><br>corolla</h2>
+                    <p><h6>hız ve konfor ikisinde bir arada ve en yüksek kalitede olduğu bir arabamı işte bu aklını başından alıcak
+                        kelimenin tam anlamıyla toyota bir bir araba olmaktan çıktı bir hayat tarzı yolunda ilerliyor sende bu ilerlemede var mısın.</h6></p>
+                </div>
+                <button class="discover-btn">
+                    <a href="#">discover</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+                </button>
+                <div class="toyota corolla">
+                <div class="üretme">
+                    <p>üretme</p>
+                    <h5>1966-günümüz</h5>
+                </div>
+                <div class="üretme">
+                    <p>tasarımcı</p>
+                    <h5>Mehmet Efe Pınaroğlu</h5>
+                </div>
+            </div>
+        </div>
+        <div class="right-sec">
+            <div class="my-car">
+                <div><img src="images/zyro-image.png" alt=""></div>
+                <div><img src="images/zyro-image (1).png" alt=""></div>
+                <div><img src="images/zyro-image (2).png" alt=""></div>
+                <div><img src="images/zyro-image (3).png" alt=""></div>
+                <div><img src="images/zyro-image (4).png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function(){
+            $(".my-car").slick({
+                autoplay:true,
+                dots:true,
+                speed:1000,
+                customPaging : function(slider,i){
+                    var thumb = $(slider.$slides[i]).data(); 
+                    return'<a>'+(i+1)+'</a>';
+                },
+            })
+         });
+    </script>
+</body>
+</html>
